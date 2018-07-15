@@ -1,0 +1,197 @@
+.hidden {
+    display: none !important; 
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-evenly;
+    border: .25rem solid;
+    border-color: #9E8473;
+    background-color: #493523;
+}
+
+.title {
+    font-family: 'Prehistoric Caveman';
+    color: #9E8473;
+    font-size: 23px;
+    padding: 20px;
+    text-shadow: 0 0 0.2em #1c1919, 0 0 0.2em #1c1919
+}
+
+.tagline {
+    display: flex;
+    margin: auto 60 auto auto;
+    font-size: 25px;
+    color: #9E8473;
+}
+
+.form-inline {
+     display: flex;
+     justify-content: center;
+}
+
+.button-container {
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn-lg {
+    background-color: #493523;
+    border: solid;
+    color: #9E8473;
+    font-size: 20px;
+    font-family: 'Prehistoric Caveman';
+    text-shadow: 0 0 0.2em #1c1919, 0 0 0.2em #1c1919
+}
+
+.background-img {
+    background:  
+    linear-gradient( rgba(177, 122, 101, 0.20), rgba(177, 122, 101, 0.20)),
+    url(cave3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+body {
+    font-size: 20%;
+    font-style: Arial;
+}
+main {
+    height: 35vh;
+}
+
+.animation-box {
+    width: 90%;
+    height: 25rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.animation-container {
+    width: 300rem;
+    height: 40rem;
+    margin: 0;
+}
+
+@keyframes topFadeOut {
+    0% {
+        position: absolute;
+        top: -3rem;
+        opacity: 0;
+    }
+    75% {
+        position: absolute;
+        top: 25%;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rightFadeInOut {
+    0% {
+        position: absolute;
+        right: -10rem;
+        opacity: 0;
+    }
+    75% {
+        position: absolute;
+        right: 10rem;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        right: 10rem;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+.first-text {
+    font-size: 3rem;
+    position: absolute;
+    left: 10%;
+    top: 1rem;
+    opacity: 0;
+    animation-name: topFadeOut;
+    animation-duration: 12s;
+    color: tan;
+}
+
+.second-text {
+    font-size: 3rem;
+    width: 30%;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    opacity: 0;
+    animation-name: rightFadeInOut;
+    animation-delay: 8s;
+    animation-duration: 8s;
+    color: tan;
+}
+
+.third-text {
+    font-size: 3rem;
+    position: absolute;
+    top: 8rem;
+    left: 30%;
+    opacity: 0;
+    color: tan;
+    animation-name: fadeInOut;
+    animation-delay: 14s;
+    animation-duration: 10s;
+}
+
+.card-container {
+    position: absolute;
+    top: 5em;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.card {
+    margin: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    width: 120px;
+}
+
+
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #493523;
+    color: #9E8473;
+}
+
