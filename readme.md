@@ -17,4 +17,4 @@ For this project, you will build a light application that reads data, has end-to
 
 ### Submission
 
-add your deployed site https://cave-plan.firebaseapp.com(#).
+add your deployed site https://cave-plan.firebaseapp.com
